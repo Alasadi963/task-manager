@@ -12,5 +12,5 @@ form.addEventListener('submit', event => {
     const task = new Task(input.value, taskManager.onRemoveTask.bind(taskManager));
     taskManager.add(task);
     taskManager.save();
-    input.value = ''; // Rensa input
+    input.value = '';
 });

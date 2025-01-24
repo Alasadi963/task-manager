@@ -29,7 +29,7 @@ export class TaskManager {
         savedData.forEach(data => {
             const task = new Task(data.description, this.onRemoveTask.bind(this));
             task.isDone = data.isDone;
-            if (data.isDone) task.toggle(); // Uppdatera stilen
+            if (data.isDone) task.toggle();
             this.add(task);
         });
     }
